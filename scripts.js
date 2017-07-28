@@ -10,7 +10,9 @@ $(document).ready(function() {
     $('#chief').css('color', 'green'); //maroon
     //$('#kevin li:last').css('color', 'black'); //( ul ;first li: last-child).css()
     $( "ul" ).first().children().last().css( "color", "black" );
-   
+   $('#kevinNewFavorite').on('click', function (){
+       console.log('button was clicked');
+   });
     
 
 });
