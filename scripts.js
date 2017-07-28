@@ -8,7 +8,8 @@ $(document).ready(function() {
     $('#kevin li').css('color', 'maroon');
     $('.food').css('color', 'pink');
     $('#chief').css('color', 'green'); //maroon
-    $('li:last-child').css('color', 'black');
+    //$('#kevin li:last').css('color', 'black'); //( ul ;first li: last-child).css()
+    $( "ul" ).first().children().last().css( "color", "black" );
    
     
 
