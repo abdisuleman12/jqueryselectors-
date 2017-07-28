@@ -10,9 +10,22 @@ $(document).ready(function() {
     $('#chief').css('color', 'green'); //maroon
     //$('#kevin li:last').css('color', 'black'); //( ul ;first li: last-child).css()
     $( "ul" ).first().children().last().css( "color", "black" );
+
+    
+    
+       // when that button is clicked
    $('#kevinNewFavorite').on('click', function (){
-       console.log('button was clicked');
+       // make the counter go up one
+       $('#kevin').append('<li> LightSabers</li>');
+
+       // log that counter
+      // console.log('button was clicked', counter , 'times');
    });
+
+   //when the button is clicked
+   //make the counter go up one
+   //log that counter
+    
     
 
 });
