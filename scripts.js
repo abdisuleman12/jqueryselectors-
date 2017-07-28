@@ -15,17 +15,30 @@ $(document).ready(function() {
     
        // when that button is clicked
    $('#kevinNewFavorite').on('click', function (){
-       // make the counter go up one
-       $('#kevin').append('<li> LightSabers</li>');
-
-       // log that counter
-      // console.log('button was clicked', counter , 'times');
-   });
-
-   //when the button is clicked
-   //make the counter go up one
-   //log that counter
+       // input value get's grapp 
+        value = $("#button").val(); 
     
+       $('#kevin').append('<li>' + value + '</li>');
+
+});
+        // when delete button is clicked 
+    $('.deleteKevin').on('click', function () {
+        // $(this) refers to the thing that was clicked on
+        
+        console.log('delete button was clicked: ', $(this))
+        
+
+        // <li class ='food'>Sushi
+                        //<button class ='deleteKevin'>delete</button></li>
+        //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        $(this).parent().remove();
+        
+        // $(this).parent.parent.remove /// removes everything on the favorite lists
+
+    })
+
+
+ 
     
 
 });
